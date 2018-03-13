@@ -9,7 +9,7 @@
 
 ## Requirements
 
-- gym >= 0.9.4
+- gym == 0.9.4 or 0.9.5
 - Python >= 3.6
 - Numpy >= 1.13.3
 - Matplotlib >= 2.1.1
@@ -21,7 +21,7 @@
 ## Fixes
 ### Error 1
 
-Reported on a Macbook pro with macOS 10.13.3. 
+Reported with gym 0.10.3. 
 
 - If you recieve a **"NOTIMPLEMENTEDERROR:"**, call the internal functions directly by prepending a _ . 
-So submarine.reset() becomes submarine.\_reset().
+So `submarine.reset()` becomes `submarine._reset()`. (Or use gym 0.9.4 or 0.9.5.)
